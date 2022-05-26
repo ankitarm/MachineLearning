@@ -1,0 +1,23 @@
+one hot encoding technique
+dummy variable trap - 1 var can b derived from rest vari- muli co variable
+u have to drop 1 dummy varible column out of all(any column)
+sklearn linear regression model is aware about dummy variable trap and it drops automatically
+sklearn - one hot encoder
+
+Logistic Regression
+
+Linear-predicted value is continuous
+Logistic-predicted value is categorical(eg: yes/no)
+eg -email spam or not -y/n
+    customer will buy insurance or not y/n
+    which party person will vote - D,R,I
+here predicted value is categorical(eg: yes/no)
+#such problems are called classification probs
+Logistic reg - tech used for classificaton
+
+Classificaion
+
+Binary classificaton- y/n (eg: email spam or not)
+Multiclass classification- which party person will vote - D,R,I
+
+
