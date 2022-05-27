@@ -1,0 +1,77 @@
+06.One hot encoding technique
+dummy variable trap - 1 var can b derived from rest vari- muli co variable
+u have to drop 1 dummy varible column out of all(any column)
+sklearn linear regression model is aware about dummy variable trap and it drops automatically
+sklearn - one hot encoder
+
+
+08.Logistic Regression
+Linear-predicted value is continuous
+Logistic-predicted value is categorical(eg: yes/no)
+eg -email spam or not -y/n
+    customer will buy insurance or not y/n
+    which party person will vote - D,R,I
+here predicted value is categorical(eg: yes/no)
+#such problems are called classification probs
+Logistic reg - tech used for classificaton
+Classificaion
+Binary classificaton- y/n (eg: email spam or not)
+Multiclass classification- which party person will vote - D,R,I
+
+
+09.Decision Tree
+entropy-randomness
+high info gain to be choosen for selecting columns/features
+gini impurity-A higher Gini index indicates greater inequality
+ML algos only work onnumbers, they cannot predict text.
+So every time we need to convert the columns into integer forms(cols which are having text)
+
+
+10.Support Vector Machine(SVM)
+Choose classification line having longer margine(distance b/w data points and line)
+nearby datapoints around the line called support vecotrs hence support vector machine
+hyperplane-plane in n-dim that seperates/classifies diff groups.
+Gamma and Regularization(C)-
+high gamma- only the close data points contribute to be support vector for the decision boundary
+low gamma-the far away data points are also considered to be support vector for the decision boundary
+High Regularization-No errors,overfitted
+Low Regularization-Might have some errors
+kernal-creating transformation on existing features so that you can draw decision boundary
+
+
+11.Random Forest Algorithm
+forest-tree-decision tree in ml
+ensemble-when we use multiple algo to build the output(here we are taking multiple decision trees)
+
+
+12-K fold Cross Validation
+this technique allows you to decide which algo to use for a specific problem
+option1:
+use all data for training- 100% data used for training and then use it to test as well
+its not the best way to measure score because the model has already seen(trained) the data and when asekd to predict will definately predict accurately
+option2:
+we split data into training and testing data-eg: 20% testing and 80%training-used in supervised learning, this tech works okay but still not great and perfect,eg:the 80% training data was related to algebra and the 20% on which we are testing is calculas then in this case it might not predict well atall.
+option3:
+k-fold Cross Validation
+We divide samples into folds and do iterations and each iteration has diff folds for training and testing.
+for eg: 100 samples divided into 5 folds -1,2,3,4,5
+iteration 1: 1 fold-test and 2,3,4,5-train - we note down score
+iteration 2: 2 fold-test and 1,3,4,5-train - we note down score
+.
+.
+iteration 5: 5 fold-test and 1,2,3,4-train - we note down score
+take average of all scores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
