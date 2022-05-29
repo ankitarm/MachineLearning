@@ -66,6 +66,67 @@ StratifiedKFold-a little better than k-fold, it will divide the folds uniformly
 eg: out of 3 fold 2 fold might be having same category and 1 fold have another and this is used for testing and other two folds for training, then model wont predict accurately.
 
 
+13. K Means Clustering Algorithm
+Supervised, unsupervised and reinforcement learning
+Supervised-in given dataset you have class label or target variable present.
+unsupervised-you have set of features, you don't know about class label or target variable.
+k-popular clustering algo-in graph u have no idea about data, you try to identify clusters in data points
+SSE-sum of square error (centroid se each data pont k bich ka dist(error) ka avg
+elbow plot-plot of all the SSE abotained from having diff k values
+
+
+14.Naive Bayes
+based on bayes theorm-application: email spam detection,weather ,face detection, article categorization
+Naive Bayes has three classifiers
+Bernoulli-when ur features are in binary form 0 or 1(not the target variables)
+multinomial-when u have discrete data (eg: movie rating from 1 to 5)
+gaussian-normal distribution or bell curve
+
+
+16.HyperparameterTunning
+the process of choosing optimal parameter is called hypertunning.
+suppose in svm we have gamma,C,kernal(parameters)
+
+17.L1 and L2 Regularization
+Overfitting-very common issue in machine learning
+when you try to make your model too accurate, train it hard and try to fit too much, then in this case you will have issues with testing dataset, when it tries to predict ne w data point it might not do well because of overfitting. So you always have to keep a balance between these two extreme cases(overfitting and underfitting)
+L1 and l2 - techniques to address overfitting
+reduce overfitting-
+l1 regularization-taking absolute value of theta along with lambda
+l2 regularization-taking squared value of theta along with lambda
+
+
+18.KNearestNeighborsClassification
+you find out the nearest datapoints of the given data point to figureout which cluster it belongs to. you need to provide k=3 (for number of nearest neighbor) You need to carefully choose value of k, not very high not very low.
+
+19.Principal component Analysis
+used for reducing dimensions
+you generally separate out dependent and independent columns. 
+But incase if you have 2000,10000 columns. how will u separate.
+In digits dataset of sklearn, each digit is 8x8 matrix, i.e. 64 features.
+FRom these feaatures not all are important. for eg: if you consider last column having 8 features are all dark for all no. and hence not important features.We need to get rid of these unimportant features beacause:
+it leads to faster training and referencing
+data visualization becomes easier.
+PCA-process of figuring out most important features or principal components that has the most impact on the target variables.
+PCA(n_components=6)-calculates most important 6 features
+Before doing PCA- you need to scale featues and accuracy might drop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
